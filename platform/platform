@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html id="modern-treasury-application" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="csrf-param" content="authenticity_token"/>
+        <meta name="csrf-token" content="wj6105JFJrZc_Q5RiIwsBLypsXDEas2hlaT2dSB5yP_TKpWZ4sYQpwqpqhC__ZOiPBPKTbWvmgVOf5u8jl6FTw"/>
+        <meta name="csp-nonce" content="GQxmK3KzecsfJd6N/z3D1A=="/>
+        <title>Modern Treasury</title>
+       <script nonce="wRQB6nUOHVqJrs36A5SnJQ==">
+    //<![CDATA[
+    window.gon = {};
+    gon.global = {
+        "segment_js_write_key": "7JVChyK8LN1tHam3imvcvqDHwQe038Xv",
+        "auth0_client_id": "IdAxBDkXxeqce3MmSjmNQzT7mKJx2yG7",
+        "auth0_custom_domain": "auth.moderntreasury.com",
+        "auth0_redirect": "https://app.moderntreasury.com",
+        "datadog_rum_application_id": "cdd8dc81-f472-4c1a-b16a-f1ac3aa2f309",
+        "datadog_rum_client_token": "pubf6cc287fc89bb715c8be1902a70aad4f",
+        "datadog_rum_environment": "production",
+        "rails_env": "production",
+        "plaid_environment": "production",
+        "plaid_public_key": "1f0b22416062984fa3c5f9a4d7c0bb",
+        "sardineHost": "api.sardine.ai",
+        "sardineIsDev": "false",
+        "sentry_dsn": "https://63e01c5b9ec44918be59cc3272db7d24@sentry.io/1244199",
+        "sentry_release": "153645",
+        "sentry_environment": "production",
+        "sentry_cell": "us001"
+    };
+    gon.sentry_context = {
+        "user": {
+            "id": "e912e5d7-d95c-4301-9303-3ab90fe81424",
+            "email": "diplomat@citibankdemobusiness.dev"
+        },
+        "tags": {
+            "live_mode": true,
+            "organization_id": "10549df9-f620-4c18-8659-5a26fb4e9642"
+        },
+        "extras": {
+            "organization_name": "u",
+            "request_id": "1-66636006-7d647a705b3b0d4f4a255b7a",
+            "is_ghosting": false
+        }
+    };
+    gon.ui = {
+        "navigationLinks": {
+            "primary_links": [],
+            "tools_links": [],
+            "products_links": [{
+                "text": "Payments",
+                "icon": "mt_payments",
+                "user_pilot_tour_id": "user_pilot_tour_payments_nav",
+                "subpaths": ["/getting_started/payments", "/getting_started/virtual_accounts"],
+                "path": "/getting_started/payments"
+            }, {
+                "icon": "mt_counterparties",
+                "text": "Counterparties",
+                "path": "/counterparties",
+                "subpaths": ["/counterparties", "/external_accounts"]
+            }, {
+                "text": "Ledgers",
+                "icon": "mt_ledgers",
+                "path": "/ledgers",
+                "subpaths": ["/ledger_transactions", "/ledger_accounts"]
+            }, {
+                "text": "Reporting",
+                "icon": "mt_reporting",
+                "path": "/reporting/reports",
+                "subpaths": ["/reports"]
+            }],
+            "additional_links": [{
+                "text": "Developers",
+                "path": "/developers/logs",
+                "icon": "mt_developers",
+                "subpaths": ["/developers/publishable_keys", "/developers/events", "/developers/webhooks", "/developers/bulk_requests", "/developers/api_keys"]
+            }],
+            "footer_links": [{
+                "text": "Invite People",
+                "icon": "add",
+                "path": "/settings/users/user_invitations/new"
+            }, {
+                "text": "Help",
+                "path": "https://help.moderntreasury.com/hc/en-us",
+                "icon": "support_vs"
+            }, {
+                "text": "Settings",
+                "icon": "settings_1",
+                "path": "/settings/organization"
+            }],
+            "settings_links": [{
+                "text": "Organization",
+                "icon": "company",
+                "path": "/settings/organization",
+                "subsections": [{
+                    "text": "General",
+                    "path": "/settings/organization"
+                }, {
+                    "text": "Users",
+                    "path": "/settings/users"
+                }, {
+                    "text": "Roles",
+                    "path": "/settings/roles"
+                }, {
+                    "text": "Account Groups",
+                    "path": "/settings/account_groups"
+                }, {
+                    "text": "Notifications",
+                    "path": "/settings/notification_groups"
+                }, {
+                    "text": "Audit Trail",
+                    "path": "/settings/audit_records"
+                }]
+            }, {
+                "text": "Integrations",
+                "path": "/settings/integrations",
+                "icon": "node_multiple",
+                "subsections": [{
+                    "text": "Push to Warehouse",
+                    "path": "/settings/push_to_warehouse/destinations"
+                }, {
+                    "text": "Plaid",
+                    "path": "/settings/plaid"
+                }, {
+                    "text": "Accounting",
+                    "path": "/settings/accounting"
+                }]
+            }, {
+                "text": "Account",
+                "path": "/settings/my_settings",
+                "icon": "user_big"
+            }]
+        },
+        "authenticityToken": "yzo6D5T4Z5L4OZt0sCtQrup1fv-lyhULd7Rdn84NmFXaLhpF5HtRg65tPzWHWu8Ias8FwtQPQq-sbzBWYCrV5Q",
+        "isLiveMode": true,
+        "isLive": true,
+        "isGhosting": false,
+        "userName": "james burvel o'callaghan iii",
+        "userId": "e912e5d7-d95c-4301-9303-3ab90fe81424",
+        "userEmail": "diplomat@citibankdemobusiness.dev",
+        "userCreatedAt": 1699101023,
+        "isDevelopment": false,
+        "userTimezone": null,
+        "cardconnectEnvironment": "fts",
+        "organizations": [{
+            "id": "10549df9-f620-4c18-8659-5a26fb4e9642",
+            "name": "u"
+        }, {
+            "id": "7e61b1b1-e6b1-4088-8cb3-a99544dbc1c0",
+            "name": "Citibank Demo Business Inc"
+        }],
+        "ticker": "U",
+        "showHelp": true,
+        "enableSpa": true,
+        "navBarView": {
+            "collapsed": false,
+            "viewId": "7fcfdf4c-d421-4097-            822d-bc7472f9f34e"
+        },
+        "productTour": {
+            "cta": null,
+            "items": [{
+                "label": "Sign up",
+                "completed": true
+            }, {
+                "label": "Add Banks",
+                "completed": true
+            }, {
+                "label": "Create Counterparty",
+                "completed": true
+            }, {
+                "label": "Create Payment Order",
+                "completed": false
+            }, {
+                "label": "Invite team members",
+                "completed": true
+            }],
+            "header": "Tour"
+        }
+    };
+    gon.resourcePermissions = [{
+        "resourceName": "invoice",
+        "actions": ["read", "write"]
+    }];
+    gon.organization = {
+        "id": "10549df9-f620-4c18-8659-5a26fb4e9642",
+        "name": "u",
+        "ticker": "U",
+        "createdAt": 1699101076,
+        "showPii": true,
+        "email_settings": {
+            "security_notifications": true,
+            "payment_order_review_digest": true,
+            "payment_order_review_immediate": true,
+            "compliance_case_review_immediate": true,
+            "counterparty_invitation_completed": true,
+            "payment_order_batch_approval_receipt": true
+        }
+    };
+    {
+        "data": {
+            "currentOrganization": {
+                "products": [{
+                        "productType": "compliance",
+                        "status": "inactive",
+                        "__typename": "Product"
+                    },
+                    {
+                        "productType": "ledgers",
+                        "status": "inactive",
+                        "__typename": "Product"
+                    },
+                    {
+                        "productType": "payments",
+                        "status": "inactive",
+                        "__typename": "Product"
+                    },
+                    {
+                        "productType": "virtual_accounts",
+                        "status": "inactive",
+                        "__typename": "Product"
+                    }
+                ],
+                "__typename": "Organization"
+            },
+            "abilities": {
+                "Ledger": {
+                    "canRead": true,
+                    "__typename": "Ability"
+                },
+                "ComplianceCase": {
+                    "canRead": true,
+                    "__typename": "Ability"
+                },
+                "__typename": "Abilities"
+            }
+        }
+    }
+    gon.flatfile = {
+        "licenseKey": "be6d29d6-2e51-477b-b480-ac7254ea60f7",
+        "environmentId": "us_env_zv6rXnb4",
+        "publishableKey": "pk_d0605977332d46c18365dcb5987fc0b6"
+    };
+    //]]>
+</script>
+
+<script nonce="wRQB6nUOHVqJrs36A5SnJQ==">
+    //<![CDATA[
+    window.gon = {};
+    gon.global = {
+        "segment_js_write_key": "7JVChyK8LN1tHam3imvcvqDHwQe038Xv",
+        "auth0_client_id": "IdAxBDkXxeqce3MmSjmNQzT7mKJx2yG7",
+        "auth0_custom_domain": "auth.moderntreasury.com",
+        "auth0_redirect": "https://app.moderntreasury.com",
+        "datadog_rum_application_id": "cdd8dc81-f472-4c1a-b16a-f1ac3aa2f309",
+        "datadog_rum_client_token": "pubf6cc287fc89bb715c8be1902a70aad4f",
+        "datadog_rum_environment": "production",
+        "rails_env": "production",
+        "plaid_environment": "production",
+        "plaid_public_key": "1f0b22416062984fa3c5f9a4d7c0bb",
+        "sardineHost": "api.sardine.ai",
+        "sardineIsDev": "false",
+        "sentry_dsn": "https://63e01c5b9ec44918be59cc3272db7d24@sentry.io/1244199",
+        "sentry_release": "153645",
+        "sentry_environment": "production",
+        "sentry_cell": "us001"
+    };
+    gon.sentry_context = {
+        "user": {
+            "id": "e912e5d7-d95c-4301-9303-3ab90fe81424",
+            "email": "diplomat@citibankdemobusiness.dev"
+        },
+        "tags": {
+            "live_mode": true,
+            "organization_id": "10549df9-f620-4c18-8659-5a26fb4e9642"
+        },
+        "extras": {
+            "organization_name": "u",
+            "request_id": "1-66636006-7d647a705b3b0d4f4a255b7a",
+            "is_ghosting": false
+        }
+    };
+    gon.ui = {
+        "navigationLinks": {
+            "primary_links": [],
+            "tools_links": [],
+            "products_links": [{
+                "text": "Payments",
+                "icon": "mt_payments",
+                "user_pilot_tour_id": "user_pilot_tour_payments_nav",
+                "subpaths": ["/getting_started/payments", "/getting_started/virtual_accounts"],
+                "path": "/getting_started/payments"
+            }, {
+                "icon": "mt_counterparties",
+                "text": "Counterparties",
+                "path": "/counterparties",
+                "subpaths": ["/counterparties", "/external_accounts"]
+            }, {
+                "text": "Ledgers",
+                "icon": "mt_ledgers",
+                "path": "/ledgers",
+                "subpaths": ["/ledger_transactions", "/ledger_accounts"]
+            }, {
+                "text": "Reporting",
+                "icon": "mt_reporting",
+                "path": "/reporting/reports",
+                "subpaths": ["/reports"]
+            }],
+            "additional_links": [{
+                "text": "Developers",
+                "path": "/developers/logs",
+                "icon": "mt_developers",
+                "subpaths": ["/developers/publishable_keys", "/developers/events", "/developers/webhooks", "/developers/bulk_requests", "/developers/api_keys"]
+            }],
+            "footer_links": [{
+                "text": "Invite People",
+                "icon": "add",
+                "path": "/settings/users/user_invitations/new"
+            }, {
+                "text": "Help",
+                "path": "https://help.moderntreasury.com/hc/en-us",
+                "icon": "support_vs"
+            }, {
+                "text": "Settings",
+                "icon": "settings_1",
+                "path": "/settings/organization"
+            }],
+            "settings_links": [{
+                "text": "Organization",
+                "icon": "company",
+                "path": "/settings/organization",
+                "subsections": [{
+                    "text": "General",
+                    "path": "/settings/organization"
+                }, {
+                    "text": "Users",
+                    "path": "/settings/users"
+                }, {
+                    "text": "Roles",
+                    "path": "/settings/roles"
+                }, {
+                    "text": "Account Groups",
+                    "path": "/settings/account_groups"
+                }, {
+                    "text": "Notifications",
+                    "path": "/settings/notification_groups"
+                }, {
+                    "text": "Audit Trail",
+                    "path": "/settings/audit_records"
+                }]
+            }, {
+                "text": "Integrations",
+                "path": "/settings/integrations",
+                "icon": "node_multiple",
+                "subsections": [{
+                    "text": "Push to Warehouse",
+                    "path": "/settings/push_to_warehouse/destinations"
+                }, {
+                    "text": "Plaid",
+                    "path": "/settings/plaid"
+                }, {
+                    "text": "Accounting",
+                    "path": "/settings/accounting"
+                }]
+            }, {
+                "text": "Account",
+                "path": "/settings/my_settings",
+                "icon": "user_big"
+            }]
+        },
+        "authenticityToken": "yzo6D5T4Z5L4OZt0sCtQrup1fv-lyhULd7Rdn84NmFXaLhpF5HtRg65tPzWHWu8Ias8FwtQPQq-sbzBWYCrV5Q",
+        "isLiveMode": true,
+        "isLive": true,
+        "isGhosting": false,
+        "userName": "james burvel o'callaghan iii",
+        "userId": "e912e5d7-d95c-4301-9303-3ab90fe81424",
+        "userEmail": "diplomat@citibankdemobusiness.dev",
+        "userCreatedAt": 1699101023,
+        "isDevelopment": false,
+        "userTimezone": null,
+        "cardconnectEnvironment": "fts",
+        "organizations": [{
+            "id": "10549df9-f620-4c18-8659-5a26fb4e9642",
+            "name": "u"
+        }, {
+            "id": "7e61b1b1-e6b1-4088-8cb3-a99544dbc1c0",
+            "name": "Citibank Demo Business Inc"
+        }],
+        "ticker": "U",
+        "showHelp": true,
+        "enableSpa": true,
+        "navBarView": {
+            "collapsed": false,
+            "viewId": "7fcfdf4c-d421-4097-            822d-bc7472f9f34e"
+        },
+        "productTour": {
+            "cta": null,
+            "items": [{
+                "label": "Sign up",
+                "completed": true
+            }, {
+                "label": "Add Banks",
+                "completed": true
+            }, {
+                "label": "Create Counterparty",
+                "completed": true
+            }, {
+                "label": "Create Payment Order",
+                "completed": false
+            }, {
+                "label": "Invite team members",
+                "completed": true
+            }],
+            "header": "Tour"
+        }
+    };
+    gon.resourcePermissions = [{
+        "resourceName": "invoice",
+        "actions": ["read", "write"]
+    }];
+    gon.organization = {
+        "id": "10549df9-f620-4c18-8659-5a26fb4e9642",
+        "name": "u",
+        "ticker": "U",
+        "createdAt": 1699101076,
+        "showPii": true,
+        "email_settings": {
+            "security_notifications": true,
+            "payment_order_review_digest": true,
+            "payment_order_review_immediate": true,
+            "compliance_case_review_immediate": true,
+            "counterparty_invitation_completed": true,
+            "payment_order_batch_approval_receipt": true
+        }
+    };
+    {
+        "data": {
+            "currentOrganization": {
+                "products": [{
+                        "productType": "compliance",
+                        "status": "inactive",
+                        "__typename": "Product"
+                    },
+                    {
+                        "productType": "ledgers",
+                        "status": "inactive",
+                        "__typename": "Product"
+                    },
+                    {
+                        "productType": "payments",
+                        "status": "inactive",
+                        "__typename": "Product"
+                    },
+                    {
+                        "productType": "virtual_accounts",
+                        "status": "inactive",
+                        "__typename": "Product"
+                    }
+                ],
+                "__typename": "Organization"
+            },
+            "abilities": {
+                "Ledger": {
+                    "canRead": true,
+                    "__typename": "Ability"
+                },
+                "ComplianceCase": {
+                    "canRead": true,
+                    "__typename": "Ability"
+                },
+                "__typename": "Abilities"
+            }
+        }
+    }
+    gon.flatfile = {
+        "licenseKey": "be6d29d6-2e51-477b-b480-ac7254ea60f7",
+        "environmentId": "us_env_zv6rXnb4",
+        "publishableKey": "pk_d0605977332d46c18365dcb5987fc0b6"
+    };
+    //]]>
+</script>
+
+
+        <link rel="apple-touch-icon" type="image/png" href="https://cdn.moderntreasury.com/packs/static/images/apple-touch-icon-1a9a3ef2033939676b41.png" sizes="180x180"/>
+        <link rel="icon" type="image/png" href="https://cdn.moderntreasury.com/packs/static/images/favicon-9eedb218711099509cfc.png"/>
+        <link rel="mask-icon" type="image/svg+xml" href="https://cdn.moderntreasury.com/packs/static/images/safari-pinned-tab-3ac0ec4393a6d096ec51.svg" color="#1ba778"/>
+        <link rel="manifest" href="/manifest.json">
+        <!-- Zendesk -->
+        <script src="https://static.zdassets.com/ekr/snippet.js?key=54282df4-9f1f-403d-92f0-7907e5ee8453" id="ze-snippet" nonce="GQxmK3KzecsfJd6N/z3D1A=="></script>
+        <link rel="stylesheet" href="https://cdn.moderntreasury.com/packs/css/198-c480418b.css"/>
+        <link rel="stylesheet" href="https://cdn.moderntreasury.com/packs/css/784-0116a1df.css"/>
+        <link rel="stylesheet" href="https://cdn.moderntreasury.com/packs/css/application-316724cf.css"/>
+    </head>
+    <body>
+        <div id="app-root"></div>
+        <script src="https://cdn.moderntreasury.com/packs/js/runtime-089ad1be39d580ab6461.js" nonce="GQxmK3KzecsfJd6N/z3D1A==" defer="defer"></script>
+        <script src="https://cdn.moderntreasury.com/packs/js/635-7e91cc3bd3065d081d99.js" nonce="GQxmK3KzecsfJd6N/z3D1A==" defer="defer"></script>
+        <script src="https://cdn.moderntreasury.com/packs/js/198-fccaecad91e8a8e64157.js" nonce="GQxmK3KzecsfJd6N/z3D1A==" defer="defer"></script>
+        <script src="https://cdn.moderntreasury.com/packs/js/168-a8385aa43bf8ff7d7ea9.js" nonce="GQxmK3KzecsfJd6N/z3D1A==" defer="defer"></script>
+        <script src="https://cdn.moderntreasury.com/packs/js/793-bedb4782e56c21a2fbb4.js" nonce="GQxmK3KzecsfJd6N/z3D1A==" defer="defer"></script>
+        <script src="https://cdn.moderntreasury.com/packs/js/719-5caec0ea5cd7db8e3d1b.js" nonce="GQxmK3KzecsfJd6N/z3D1A==" defer="defer"></script>
+        <script src="https://cdn.moderntreasury.com/packs/js/160-b4d45fba6fe93c061b8e.js" nonce="GQxmK3KzecsfJd6N/z3D1A==" defer="defer"></script>
+        <script src="https://cdn.moderntreasury.com/packs/js/776-2637420be0209524f4cd.js" nonce="GQxmK3KzecsfJd6N/z3D1A==" defer="defer"></script>
+        <script src="https://cdn.moderntreasury.com/packs/js/379-14a3dbd821f29af2b47c.js" nonce="GQxmK3KzecsfJd6N/z3D1A==" defer="defer"></script>
+        <script src="https://cdn.moderntreasury.com/packs/js/308-fe1a4769518335942d88.js" nonce="GQxmK3KzecsfJd6N/z3D1A==" defer="defer"></script>
+        <script src="https://cdn.moderntreasury.com/packs/js/146-c5d94a4f7ebebaef7e4d.js" nonce="GQxmK3KzecsfJd6N/z3D1A==" defer="defer"></script>
+        <script src="https://cdn.moderntreasury.com/packs/js/149-55c48a663c5a0fd19425.js" nonce="GQxmK3KzecsfJd6N/z3D1A==" defer="defer"></script>
+        <script src="https://cdn.moderntreasury.com/packs/js/94-65ac567e1d37df945f66.js" nonce="GQxmK3KzecsfJd6N/z3D1A==" defer="defer"></script>
+        <script src="https://cdn.moderntreasury.com/packs/js/831-09da4a2ced5c9adae247.js" nonce="GQxmK3KzecsfJd6N/z3D1A==" defer="defer"></script>
+        <script src="https://cdn.moderntreasury.com/packs/js/784-ad86d7d0b3b87825476f.js" nonce="GQxmK3KzecsfJd6N/z3D1A==" defer="defer"></script>
+        <script src="https://cdn.moderntreasury.com/packs/js/900-287fe4455036ef50f25f.js" nonce="GQxmK3KzecsfJd6N/z3D1A==" defer="defer"></script>
+        <script src="https://cdn.moderntreasury.com/packs/js/3-bca1ffff09cdcf508990.js" nonce="GQxmK3KzecsfJd6N/z3D1A==" defer="defer"></script>
+        <script src="https://cdn.moderntreasury.com/packs/js/890-14e19c406f4a9e35d0d1.js" nonce="GQxmK3KzecsfJd6N/z3D1A==" defer="defer"></script>
+        <script src="https://cdn.moderntreasury.com/packs/js/11-e8b526f4f9f33202d8f7.js" nonce="GQxmK3KzecsfJd6N/z3D1A==" defer="defer"></script>
+        <script src="https://cdn.moderntreasury.com/packs/js/application-b2b82e31cedc11566edd.js" nonce="GQxmK3KzecsfJd6N/z3D1A==" defer="defer"></script>
+    </body>
+</html>

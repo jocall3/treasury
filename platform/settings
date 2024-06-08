@@ -1,0 +1,131 @@
+{
+    "integrations": {
+        "Amplitude": {
+            "apiKey": "8f98099aed51ed1eccd617de4bff5056",
+            "appendFieldsToEventProps": {},
+            "batchEvents": true,
+            "deviceIdFromUrlParam": true,
+            "enableLocationListening": true,
+            "eventUploadPeriodMillis": 30000,
+            "eventUploadThreshold": 30,
+            "forceHttps": true,
+            "groupTypeTrait": "admin",
+            "groupValueTrait": "admin",
+            "mapQueryParams": {},
+            "preferAnonymousIdForDeviceId": false,
+            "saveParamsReferrerOncePerSession": true,
+            "trackAllPages": true,
+            "trackAllPagesV2": true,
+            "trackCategorizedPages": true,
+            "trackGclid": true,
+            "trackNamedPages": true,
+            "trackProductsOnce": true,
+            "trackReferrer": true,
+            "trackRevenuePerProduct": true,
+            "trackSessionEvents": true,
+            "trackUtmProperties": true,
+            "traitsToIncrement": [],
+            "traitsToSetOnce": [],
+            "unsetParamsReferrerOnNewSession": true,
+            "useAdvertisingIdForDeviceId": true,
+            "useCustomAmplitudeProperties": true,
+            "useLogRevenueV2": true,
+            "versionName": "",
+            "versionSettings": {
+                "version": "3.3.3",
+                "componentTypes": [
+                    "browser",
+                    "ios",
+                    "android",
+                    "server"
+                ]
+            },
+            "type": "browser",
+            "bundlingStatus": "bundled"
+        },
+        "LinkedIn Insight Tag": {
+            "partnerId": "2924882",
+            "versionSettings": {
+                "version": "1.0.1",
+                "componentTypes": [
+                    "browser"
+                ]
+            },
+            "type": "browser",
+            "bundlingStatus": "bundled"
+        },
+        "Actions Amplitude": {
+            "versionSettings": {
+                "componentTypes": []
+            }
+        },
+        "Segment.io": {
+            "apiKey": "YF0zCr8UobUdoXiK2Fge3VVKvyhlK460",
+            "unbundledIntegrations": [],
+            "addBundledMetadata": true,
+            "maybeBundledConfigIds": {
+                "Amplitude": [
+                    "5f1ac6d5775aae5425ecc483"
+                ],
+                "LinkedIn Insight Tag": [
+                    "61016f1f064e2802181b315b"
+                ]
+            },
+            "versionSettings": {
+                "version": "4.4.7",
+                "componentTypes": [
+                    "browser"
+                ]
+            }
+        }
+    },
+    "plan": {
+        "track": {
+            "__default": {
+                "enabled": true,
+                "integrations": {}
+            }
+        },
+        "identify": {
+            "__default": {
+                "enabled": true
+            }
+        },
+        "group": {
+            "__default": {
+                "enabled": true
+            }
+        }
+    },
+    "edgeFunction": {},
+    "analyticsNextEnabled": true,
+    "middlewareSettings": {},
+    "enabledMiddleware": {},
+    "metrics": {
+        "sampleRate": 0.1
+    },
+    "legacyVideoPluginsEnabled": true,
+    "remotePlugins": [
+        {
+            "name": "Amplitude (Actions)",
+            "creationName": "Actions Amplitude",
+            "libraryName": "amplitude-pluginsDestination",
+            "url": "https://cdn.segment.com/next-integrations/actions/amplitude-plugins/054a2e7bbf2af78f88e5.js",
+            "settings": {
+                "versionSettings": {
+                    "componentTypes": []
+                },
+                "subscriptions": [
+                    {
+                        "id": "iWXYj9gFsugRf7RkL7hAKa",
+                        "name": "Browser Session Tracking",
+                        "enabled": true,
+                        "partnerAction": "sessionId",
+                        "subscribe": "type = \"track\" or type = \"identify\" or type = \"group\" or type = \"page\" or type = \"alias\"",
+                        "mapping": {}
+                    }
+                ]
+            }
+        }
+    ]
+}
