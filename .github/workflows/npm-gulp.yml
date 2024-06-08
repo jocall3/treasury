@@ -1,0 +1,30 @@
+name: NodeJS with Gulp
+
+on:
+  push:
+    branches: [ "master" ] # "Master" changed to "master"
+  pull_request:
+    branches: [ "master" ] # "Master" changed to "master"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [14.x, 16.x, 18.x]
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v2 # Updated to v2
+
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ matrix.node-version }}
+
+    - name: Install Dependencies and Build
+      run: |
+        npm install
+        npm install --global gulp-cli # Install Gulp globally
+        gulp
