@@ -1,4 +1,6 @@
-name: SLSA Generic Provenance Generator
+# Workflow created on June 8th, 2024 - James Burvel O'Callaghan III - Integration Provenance
+
+name: James Burvel O'Callaghan III - Integration Provenance
 
 on:
   workflow_dispatch:
@@ -15,19 +17,35 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v2
 
-      - name: Build Artifacts
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16' # or any other preferred version
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Build or Compile JavaScript/TypeScript
         run: |
-          # These are some amazing artifacts.
-          echo "artifact1" > artifact1
-          echo "artifact2" > artifact2
+          # Run build or compilation commands for JavaScript and TypeScript files.
+          # For example, if using TypeScript, you can compile TypeScript files to JavaScript.
+          npm run build # adjust this command according to your project setup
+
+      - name: Generate Artifacts
+        run: |
+          # Create artifacts for James Burvel O'Callaghan III - Modern Treasury, Plaid, Stripe, and cryptocurrency integrations.
+          echo "modern_treasury_integration" > modern_treasury_integration
+          echo "plaid_integration" > plaid_integration
+          echo "stripe_integration" > stripe_integration
+          echo "cryptocurrency_integration" > cryptocurrency_integration
 
       - name: Generate Subject for Provenance
         id: hash
         run: |
           set -euo pipefail
 
-          # List the artifacts the provenance will refer to.
-          files=$(ls artifact*)
+          # List the artifacts for the provenance.
+          files=$(ls *_integration)
           # Generate the subjects (base64 encoded).
           echo "hashes=$(sha256sum $files | base64 -w0)" >> "${GITHUB_OUTPUT}"
 
@@ -40,4 +58,4 @@ jobs:
     uses: slsa-framework/slsa-github-generator/.github/workflows/generator_generic_slsa3.yml@v1.4.0
     with:
       base64-subjects: "${{ needs.build.outputs.digests }}"
-      upload-assets: true # Optional: Upload to a new release
+      upload-assets: true # Upload to a new release
